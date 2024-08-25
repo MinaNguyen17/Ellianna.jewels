@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <!------------ Header of the page -------------->
+    <div class="hero">
+      <div class="navbar">
+        <img
+          src="/img/logo.png"
+          alt="logo"
+          style="height: 90px; width: 195px"
+        />
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/product-page">Product</a></li>
+          <li><a href="/signin-page">Sign In</a></li>
+          <li><a href="/admin-page">Admin</a></li>
+        </ul>
+        <div class="navbar-icon">
+          <img src="/img/5.png" alt="icon" />
+          <img src="/img/6.png" alt="icon" />
+          <img src="/img/7.png" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <!------------ Body of the page -------------->
+    <div class="login-container">
+      <div class="login-box">
+        <h2 style="color: #7199ff">Sign In</h2>
+        <form id="login-form">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="login-button">Login</button>
+        </form>
+        <p class="signup-text">
+          Don't have an account?
+          <a href="/signup">Sign up</a>
+        </p>
+        <div id="error-message" class="error-message"></div>
+      </div>
+    </div>
+    <!------------ End of Body ------------------->
+  </body>
+  <script src="/jquery.js" type="text/javascript"></script>
+  <script src="/login.js" type="text/javascript"></script>
+  <script src="/event.js" type="text/javascript"></script>
+</html>

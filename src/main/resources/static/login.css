@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  background-color: #acc3ff;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  font-size: 40 !important;
+  font-weight: 600 !important;
+}
+
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  text-align: right;
+  margin: 0 25px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  position: relative;
+}
+
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background: #ffdcff;
+  position: absolute;
+  left: 53%;
+  transform: translateX(-50%);
+  top: 30px;
+  transition: 0.4s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar-icon img {
+  height: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  margin-left: 30px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7199ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #5a89ff;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}

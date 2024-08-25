@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  background-color: #acc3ff;
+}
+
+.hero {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar {
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  font-size: 40 !important;
+  font-weight: 600 !important;
+}
+
+ul {
+  flex: 1;
+  text-align: right;
+}
+
+ul li {
+  display: inline-block;
+  text-align: right;
+  margin: 0 25px;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  position: relative;
+}
+
+ul li a::after {
+  content: "";
+  width: 0;
+  height: 10px;
+  background: #ffdcff;
+  position: absolute;
+  left: 53%;
+  transform: translateX(-50%);
+  top: 30px;
+  transition: 0.4s;
+}
+
+ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar-icon img {
+  height: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.navbar-icon {
+  margin-left: 30px;
+}
+
+.banner {
+  background-color: white;
+  display: flex;
+  margin-top: 40px;
+  border: 10px white solid;
+  border-radius: 10px;
+}
+
+.left-column,
+.right-column {
+  flex-basis: 50%;
+}
+
+.right-column img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 95%;
+  height: auto;
+}
+
+.left-column h1 {
+  font-size: 70;
+  align-items: center;
+  display: flex;
+  margin-left: 30px;
+  font-weight: 700;
+  margin-top: 80px;
+  color: #acc3ff;
+}
+
+.left-column h3 {
+  align-items: center;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #000;
+}
+
+.left-column p {
+  align-items: center;
+  display: flex;
+  font-size: 15;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 25px;
+  color: #000;
+}
+
+h1 span {
+  font-size: 70;
+  align-items: center;
+  display: flex;
+  /* margin-left: 27px;
+  margin-top: 30px; */
+  font-weight: 700;
+  color: #ffbbff;
+}
+
+.end {
+  background-color: #acc3ff;
+  height: 50px;
+}
+
+#button {
+  align-items: center;
+  display: flex;
+  padding: 15px 15px;
+  border: none;
+  color: white;
+  font-size: 20;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 25px;
+  background-color: #acc3ff;
+  cursor: pointer;
+}
+
+/* for product page */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px; /* Adjust the width as needed */
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%; /* Makes the image fill the width of the card */
+  height: auto; /* Keeps the aspect ratio of the image */
+  border-radius: 4px;
+  max-height: 200px; /* Limits the height of the image */
+  object-fit: cover; /* Ensures the image covers the area while preserving aspect ratio */
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card h3 {
+  margin: 16px 0 8px;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+}
